@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.menu-left .menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-left .menu-btn:hover {
+  color: #6495ED;
+}
+
+.menu-right .icon {
+  color: white;
+  font-size: 18px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.menu-right .icon:hover {
+  color: #6495ED;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 60px); /* віднімаємо висоту меню */
+}
+
+.left-image {
+  flex: 4; /* 40% */
+  overflow: hidden;
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.right-side {
+  flex: 6; /* 60% */
+  display: flex;
+  flex-direction: row;
+}
+
+.text-block {
+  flex: 57; /* 57% з 100 */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.right-block {
+  flex: 3; /* 3% з 100 */
+  background-color: #6495ED;
+}
+
+.h1 {
+    font-size: 55px;
+    margin-bottom: 0;
+}
+
+.light-blue {
+    color: #4169E1;
+}
+
+.custom-h3 {
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.light-gray {
+    color: #808080;
+}
+
+.contact-info {
+  margin-top: 40px;
+  padding: 10px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #333;
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #4169E1;
+  margin-bottom: 8px;
+}
+
+.contact-text {
+  text-align: left;
+}
+
+.contact-text div {
+  line-height: 1.4;
+}
