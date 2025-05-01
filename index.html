@@ -5,47 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yevheniia Bui</title>
   <link rel="stylesheet" href="mainPage.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="profileInfo.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-left">
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header-left">
+        <button class="header-btn">сases</button>
+        <button class="header-btn">сontacts</button>
+      </div>
+      <div class="mobile-menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="header-right">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon white-box-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </header>
+  
+    <div class="mobile-menu">
       <button class="header-btn">сases</button>
       <button class="header-btn">сontacts</button>
     </div>
-    <div class="header-right">
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon white-box-icon">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </header>
+  </div>
 
-  <div class="main-info">
-    <div class="profile">
-      <div class="profile-image">
-        <img src="img/profile-image.png" alt="Profile image">
-      </div>
-      <div class="profile-info">
-        <h1>Yevheniia Bui</h1>
-        <p>graphic designer</p>
-      </div>
+  <div class="profile">
+    <div class="profile-image">
+      <img src="img/profile-image.png" alt="Profile image">
     </div>
-
-    <div class="profile-cards">
-      <div class="card">
-        <p>Bachelor of Graphic Design, Transcarpathian Academy of Arts</p>
-      </div>
-      <div class="card">
-        <p>I build brand identity and boost recognition through design.</p>
-      </div>
-      <div class="card">
-        <p>Need design that works and inspires? Let’s talk.</p>
-      </div>
+    <div class="profile-info">
+      <h1>Yevheniia Bui</h1>
+      <p>graphic designer</p>
+    </div>
+  </div>
+  <div class="profile-cards">
+    <div class="card">
+      <p>Bachelor of Graphic Design, Transcarpathian Academy of Arts</p>
+    </div>
+    <div class="card">
+      <p>I build brand identity and boost recognition through design.</p>
+    </div>
+    <div class="card">
+      <p>Need design that works and inspires? Let’s talk.</p>
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
