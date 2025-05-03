@@ -21,3 +21,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+const slider = document.querySelector('.skills-slider');
+const slides = document.querySelectorAll('.skill');
+const leftArrow = document.querySelector('.slider-arrow.left');
+const rightArrow = document.querySelector('.slider-arrow.right');
+
+let currentIndex = 0;
+
+function updateSlider() {
+    const slideWidth = slides[0].offsetWidth + 40;
+    slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
+
+leftArrow.addEventListener('click', () => {
+    if (currentIndex === 0) {
+        currentIndex = slides.length - 1;
+    } else {
+        currentIndex--;
+    }
+    updateSlider();
+});
+
+rightArrow.addEventListener('click', () => {
+    if (currentIndex === slides.length - 1) {
+        currentIndex = 0;
+    } else {
+        currentIndex++;
+    }
+    updateSlider();
+});
+
+window.addEventListener('resize', updateSlider);
+window.addEventListener('load', updateSlider);
