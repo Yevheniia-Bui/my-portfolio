@@ -64,6 +64,30 @@
     max-width: 400px;
 }
 
+@media (max-width: 400px) {
+    .profile-info {
+        padding: 30px 43px 17px;
+    }
+
+    .profile-info h1 {
+        font-size: 1.9rem;
+        text-indent: 0;
+    }
+
+    .profile-info p {
+        font-size: 1.25rem;
+        text-indent: 0;
+    }
+
+    .profile-cards {
+        width: 285.27px;
+    }
+
+    .card {
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 1030px) {
     .profile {
         flex-direction: column;
@@ -115,30 +139,6 @@
     }
 }
 
-@media (max-width: 400px) {
-    .profile-info {
-        padding: 30px 40px 17px;
-    }
-
-    .profile-info h1 {
-        font-size: 1.9rem;
-        text-indent: 0;
-    }
-
-    .profile-info p {
-        font-size: 1.25rem;
-        text-indent: 0;
-    }
-
-    .profile-cards {
-        width: 285.27px;
-    }
-
-    .card {
-        font-size: 0.85rem;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 1030px) {
     .profile-info {
         padding: 30px 50px 17px;
@@ -174,6 +174,12 @@
     }
 }
 
+@media (min-width: 1867px) and (max-width: 1919px) {
+    .card {
+        max-width: 450px;
+    }
+}
+
 @media (width: 1920px) {
     .profile-cards {
         margin-left: 305px;
@@ -182,16 +188,22 @@
 
 @media (min-width: 1921px) {
     .profile {
-        margin: 50px 297px 0px 297px;
+        margin: 50px 250px 0px 250px;
     }
 
     .profile-cards {
-        margin-left: 505px;
-        margin-right: 297px;
+        margin-left: 460px;
+        margin-right: 250px;
     }
 
     .card {
         font-size: 1.4rem;
         max-width: 550px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .card {
+        max-width: 700px;
     }
 }
